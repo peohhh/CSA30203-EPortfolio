@@ -7,193 +7,454 @@
 
 <style>
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+html{
+  scroll-behavior:smooth;
 }
 
 body{
-background:#0b0b0f;
-color:white;
-line-height:1.6;
-}
-
-header{
-background:linear-gradient(135deg,#ff4fb8,#111);
-padding:50px 20px;
-text-align:center;
-}
-
-header h1{
-font-size:42px;
-margin-bottom:10px;
+  background:#08080c;
+  color:white;
+  line-height:1.6;
 }
 
 nav{
-background:#111;
-padding:15px;
-text-align:center;
+  position:fixed;
+  top:0;
+  width:100%;
+  background:#111;
+  padding:15px;
+  text-align:center;
+  z-index:1000;
+  border-bottom:1px solid #ff4fb8;
 }
 
 nav a{
-color:#ff7acb;
-text-decoration:none;
-margin:0 15px;
-font-weight:bold;
+  color:#ff8bd4;
+  text-decoration:none;
+  margin:0 12px;
+  font-weight:bold;
 }
 
-section{
-padding:40px 8%;
+nav a:hover{
+  color:white;
+}
+
+.page{
+  min-height:100vh;
+  padding:100px 8% 60px;
+}
+
+.hero{
+  background:linear-gradient(135deg,#ff4fb8,#111,#050505);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:45px;
+  margin-bottom:15px;
+}
+
+.hero h2{
+  color:#ffd6ef;
+  margin-bottom:20px;
+}
+
+.btn{
+  display:inline-block;
+  margin:10px;
+  padding:12px 25px;
+  background:#ff4fb8;
+  color:white;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.btn:hover{
+  background:white;
+  color:#ff4fb8;
 }
 
 h2{
-color:#ff5fc0;
-margin-bottom:20px;
-border-left:5px solid #ff5fc0;
-padding-left:10px;
+  color:#ff5fc0;
+  margin-bottom:25px;
+  border-left:6px solid #ff5fc0;
+  padding-left:12px;
 }
 
 .cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:22px;
 }
 
 .card{
-background:#17171f;
-padding:20px;
-border-radius:15px;
-border:1px solid #ff4fb8;
-box-shadow:0 0 15px rgba(255,79,184,0.25);
+  background:#17171f;
+  padding:25px;
+  border-radius:18px;
+  border:1px solid #ff4fb8;
+  box-shadow:0 0 18px rgba(255,79,184,0.25);
 }
 
 .card h3{
-color:#ff9bd8;
-margin-bottom:10px;
+  color:#ff9bd8;
+  margin-bottom:12px;
 }
 
 .kpi{
-font-size:28px;
-font-weight:bold;
-color:#ff4fb8;
+  font-size:35px;
+  color:#ff4fb8;
+  font-weight:bold;
+}
+
+.skill{
+  margin-bottom:18px;
+}
+
+.bar{
+  width:100%;
+  background:#333;
+  border-radius:20px;
+  overflow:hidden;
+  height:18px;
+}
+
+.fill{
+  height:100%;
+  background:linear-gradient(90deg,#ff4fb8,#ffaadf);
+}
+
+.timeline{
+  border-left:4px solid #ff4fb8;
+  padding-left:25px;
+}
+
+.timeline-box{
+  background:#17171f;
+  padding:20px;
+  margin-bottom:20px;
+  border-radius:15px;
+  border:1px solid #ff4fb8;
+}
+
+.project img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  border-radius:12px;
+  margin-bottom:15px;
+  border:1px solid #ff4fb8;
+}
+
+ul{
+  margin-left:20px;
 }
 
 footer{
-text-align:center;
-padding:20px;
-background:#111;
-color:#ff9bd8;
+  text-align:center;
+  padding:25px;
+  background:#111;
+  color:#ff9bd8;
 }
 </style>
-
 </head>
 
 <body>
 
-<header>
-<h1>CSA30203 E-Portfolio</h1>
-<p>Personal Career Development Portfolio in Network Security</p>
-<p><strong>Sitti Rufaidah</strong> | Internet Computing, UniSZA</p>
-</header>
-
 <nav>
-<a href="#about">About</a>
-<a href="#career">Career</a>
-<a href="#skills">Skills</a>
-<a href="#plan">Plan</a>
-<a href="#reflection">Reflection</a>
+  <a href="#home">Home</a>
+  <a href="#career">Career</a>
+  <a href="#skills">Skills</a>
+  <a href="#plan">Plan</a>
+  <a href="#evidence">Evidence</a>
+  <a href="#reflection">Reflection</a>
 </nav>
 
-<section id="about">
-<h2>About Me</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Career Goal</h3>
-<p class="kpi">Network Security Analyst</p>
-</div>
-
-<div class="card">
-<h3>Projects</h3>
-<p class="kpi">4</p>
-</div>
-
-<div class="card">
-<h3>Certifications</h3>
-<p class="kpi">3</p>
-</div>
-
-</div>
+<section id="home" class="page hero">
+  <div>
+    <h1>CSA30203 E-Portfolio</h1>
+    <h2>Personal Career Development Portfolio</h2>
+    <p><strong>Sitti Rufaidah</strong></p>
+    <p>Internet Computing | UniSZA</p>
+    <p>Aspiring Network Security Analyst</p>
+    <br>
+    <a href="#career" class="btn">View Portfolio</a>
+    <a href="#evidence" class="btn">View Evidence</a>
+  </div>
 </section>
 
-<section id="career">
-<h2>Career Exploration</h2>
+<section id="career" class="page">
+  <h2>Career Exploration</h2>
 
-<div class="card">
-<h3>Network Security Analyst</h3>
+  <div class="card">
+    <h3>Chosen Career: Network Security Analyst</h3>
+    <p>
+      A Network Security Analyst is responsible for protecting an organization’s computer
+      network from cyber threats. This role involves monitoring network traffic, detecting
+      suspicious activities, managing security tools, and responding to security incidents.
+    </p>
+    <br>
+    <p>
+      I choose this career because it matches my background in Internet Computing,
+      networking, cybersecurity assignments, and my interest in protecting digital systems.
+    </p>
+  </div>
 
-<p>
-A Network Security Analyst protects computer networks from cyber threats and attacks.
-The role includes monitoring traffic, detecting threats, managing security tools and responding to incidents.
-</p>
+  <br>
 
-</div>
+  <div class="cards">
+    <div class="card">
+      <h3>Job Responsibilities</h3>
+      <ul>
+        <li>Monitor network activity</li>
+        <li>Detect cyber threats</li>
+        <li>Respond to incidents</li>
+        <li>Support firewall and security tools</li>
+        <li>Perform basic vulnerability analysis</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Required Skills</h3>
+      <ul>
+        <li>Networking fundamentals</li>
+        <li>Linux basics</li>
+        <li>Wireshark</li>
+        <li>Firewall knowledge</li>
+        <li>Cybersecurity awareness</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Cybersecurity Relevance</h3>
+      <p>
+        Network security is important because organizations depend on secure networks
+        to protect data, prevent cyberattacks, and maintain business continuity.
+      </p>
+    </div>
+  </div>
 </section>
 
-<section id="skills">
-<h2>Skills Assessment</h2>
+<section id="skills" class="page">
+  <h2>Personal Skills Assessment</h2>
 
-<div class="card">
-<ul>
-<li>Networking Basics</li>
-<li>Python Programming</li>
-<li>Cybersecurity Fundamentals</li>
-<li>Communication Skills</li>
-<li>Teamwork</li>
-</ul>
-</div>
+  <div class="cards">
+    <div class="card">
+      <h3>Current Technical Skills</h3>
 
+      <div class="skill">
+        <p>Networking Basics - 75%</p>
+        <div class="bar"><div class="fill" style="width:75%"></div></div>
+      </div>
+
+      <div class="skill">
+        <p>Cybersecurity Concepts - 60%</p>
+        <div class="bar"><div class="fill" style="width:60%"></div></div>
+      </div>
+
+      <div class="skill">
+        <p>Python Basics - 55%</p>
+        <div class="bar"><div class="fill" style="width:55%"></div></div>
+      </div>
+
+      <div class="skill">
+        <p>Linux Basics - 50%</p>
+        <div class="bar"><div class="fill" style="width:50%"></div></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Soft Skills</h3>
+
+      <div class="skill">
+        <p>Teamwork - 90%</p>
+        <div class="bar"><div class="fill" style="width:90%"></div></div>
+      </div>
+
+      <div class="skill">
+        <p>Communication - 85%</p>
+        <div class="bar"><div class="fill" style="width:85%"></div></div>
+      </div>
+
+      <div class="skill">
+        <p>Problem Solving - 80%</p>
+        <div class="bar"><div class="fill" style="width:80%"></div></div>
+      </div>
+
+      <div class="skill">
+        <p>Creativity / 3D & AR - 80%</p>
+        <div class="bar"><div class="fill" style="width:80%"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="card">
+    <h3>Skills Gap Analysis</h3>
+    <p>
+      Compared to industry requirements, I still need to improve my hands-on skills in
+      Linux, Wireshark, SIEM tools, and incident response. However, my academic projects
+      have helped me build a strong foundation in networking, problem solving, and system understanding.
+    </p>
+  </div>
 </section>
 
-<section id="plan">
-<h2>Career Development Plan</h2>
+<section id="plan" class="page">
+  <h2>Career Development Plan</h2>
 
-<div class="cards">
+  <div class="timeline">
+    <div class="timeline-box">
+      <h3>Short-Term Goal: 2026 - 2027</h3>
+      <p>
+        Complete internship in IT or networking field, improve Linux skills, learn Wireshark,
+        and strengthen networking knowledge.
+      </p>
+    </div>
 
-<div class="card">
-<h3>2026-2027</h3>
-<p>Complete internship and improve Linux & Wireshark skills.</p>
-</div>
+    <div class="timeline-box">
+      <h3>Medium-Term Goal: 2027 - 2028</h3>
+      <p>
+        Take CCNA certification, build a small cybersecurity lab, and learn basic security
+        monitoring tools such as Splunk or SIEM.
+      </p>
+    </div>
 
-<div class="card">
-<h3>2027-2028</h3>
-<p>Take CCNA certification and build cybersecurity portfolio.</p>
-</div>
-
-<div class="card">
-<h3>2029-2031</h3>
-<p>Become a Network Security Analyst and obtain Security+ certification.</p>
-</div>
-
-</div>
-
+    <div class="timeline-box">
+      <h3>Long-Term Goal: 2029 - 2031</h3>
+      <p>
+        Work as a Network Security Analyst and continue improving professional skills
+        through Security+ or other cybersecurity certifications.
+      </p>
+    </div>
+  </div>
 </section>
 
-<section id="reflection">
-<h2>Reflection</h2>
+<section id="evidence" class="page">
+  <h2>Evidence of Learning</h2>
 
-<div class="card">
-<p>
-My dream company is Telekom Malaysia. I want to contribute to network security and protect critical infrastructure while continuously improving my technical and professional skills.
-</p>
-</div>
+  <div class="cards">
 
+    <div class="card project">
+      <img src="images/smart-campus.png" alt="Smart Campus Network Design">
+      <h3>Smart Campus Network Design</h3>
+      <p>
+        This project improved my understanding of subnetting, IP addressing,
+        topology design, and network planning.
+      </p>
+      <a href="#" class="btn">View Project</a>
+    </div>
+
+    <div class="card project">
+      <img src="images/paypal.png" alt="PayPal Security Analysis">
+      <h3>PayPal Security Analysis</h3>
+      <p>
+        This assignment helped me understand IAM, SIEM, Zero Trust, NGFW,
+        CSPM, and cloud security weaknesses.
+      </p>
+      <a href="#" class="btn">View Report</a>
+    </div>
+
+    <div class="card project">
+      <img src="images/churnguard.png" alt="ChurnGuard AI Dashboard">
+      <h3>ChurnGuard AI Dashboard</h3>
+      <p>
+        This project shows my ability to use dashboard design, data analysis,
+        and problem-solving skills.
+      </p>
+      <a href="#" class="btn">View Dashboard</a>
+    </div>
+
+    <div class="card project">
+      <img src="images/studynest.png" alt="StudyNest Website">
+      <h3>StudyNest Website</h3>
+      <p>
+        This project improved my understanding of web systems, login function,
+        dashboard design, and user interface.
+      </p>
+      <a href="#" class="btn">View Website</a>
+    </div>
+
+    <div class="card project">
+      <img src="images/ar-project.png" alt="AR Project">
+      <h3>SabahARtifacts AR Project</h3>
+      <p>
+        This AR project improved my creativity, technical software skills,
+        Unity knowledge, and digital learning system development.
+      </p>
+      <a href="#" class="btn">View AR Project</a>
+    </div>
+
+    <div class="card project">
+      <img src="images/3d-project.png" alt="3D Project">
+      <h3>3D Modeling / Animation Project</h3>
+      <p>
+        This project developed my creativity, attention to detail, and ability
+        to use 3D tools such as Maya or Blender.
+      </p>
+      <a href="#" class="btn">View 3D Work</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="reflection" class="page">
+  <h2>Personal Reflection</h2>
+
+  <div class="card">
+    <h3>Dream Company: Telekom Malaysia</h3>
+    <p>
+      I want to work at Telekom Malaysia because it is one of the main telecommunication
+      companies in Malaysia. Since the company manages important network infrastructure
+      and customer data, cybersecurity plays an important role in protecting its services.
+    </p>
+    <br>
+
+    <h3>What Value Can I Bring?</h3>
+    <p>
+      I can bring value through my basic networking knowledge, willingness to learn,
+      teamwork skills, creativity, and interest in cybersecurity. My experience in academic
+      projects has helped me understand both technical and practical problem-solving.
+    </p>
+    <br>
+
+    <h3>Why Should You Hire Me?</h3>
+    <p>
+      I am responsible, adaptable, and motivated to improve myself. Although I still have
+      limited industry experience, I am willing to learn new tools and gain hands-on exposure
+      in network security.
+    </p>
+    <br>
+
+    <h3>Strengths</h3>
+    <ul>
+      <li>Responsible and hardworking</li>
+      <li>Good teamwork and communication</li>
+      <li>Willing to learn new technologies</li>
+      <li>Creative through AR and 3D project experience</li>
+    </ul>
+    <br>
+
+    <h3>Weaknesses</h3>
+    <ul>
+      <li>Limited real industry experience</li>
+      <li>Need to improve Linux and cybersecurity tools</li>
+      <li>Need more hands-on practice in network security</li>
+    </ul>
+  </div>
 </section>
 
 <footer>
-<p>© 2026 Sitti Rufaidah | CSA30203 E-Portfolio</p>
+  <p>© 2026 Sitti Rufaidah | CSA30203 E-Portfolio</p>
 </footer>
 
 </body>
