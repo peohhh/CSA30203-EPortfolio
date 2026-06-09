@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,7 +38,7 @@ nav{
 nav a{
   color:#ff8bd4;
   text-decoration:none;
-  margin:0 12px;
+  margin:0 10px;
   font-weight:bold;
 }
 
@@ -58,14 +59,23 @@ nav a:hover{
   text-align:center;
 }
 
+.profile-img{
+  width:180px;
+  height:180px;
+  border-radius:50%;
+  border:4px solid white;
+  object-fit:cover;
+  margin-bottom:20px;
+}
+
 .hero h1{
   font-size:45px;
-  margin-bottom:15px;
+  margin-bottom:10px;
 }
 
 .hero h2{
   color:#ffd6ef;
-  margin-bottom:20px;
+  margin-bottom:15px;
 }
 
 .btn{
@@ -153,6 +163,24 @@ h2{
   border-radius:12px;
   margin-bottom:15px;
   border:1px solid #ff4fb8;
+  background:#222;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:15px;
+}
+
+th,td{
+  border:1px solid #ff4fb8;
+  padding:12px;
+  text-align:left;
+}
+
+th{
+  background:#2a1022;
+  color:#ff9bd8;
 }
 
 ul{
@@ -181,14 +209,52 @@ footer{
 
 <section id="home" class="page hero">
   <div>
-    <h1>CSA30203 E-Portfolio</h1>
-    <h2>Personal Career Development Portfolio</h2>
-    <p><strong>Sitti Rufaidah</strong></p>
-    <p>Internet Computing | UniSZA</p>
-    <p>Aspiring Network Security Analyst</p>
+    <img src="images/profile.jpg" alt="Sitti Rufaidah" class="profile-img">
+
+    <h1>SITTI RUFAIDAH BINTI MOKSIN</h1>
+
+    <h2>Bachelor of Information Technology<br>
+    (Informatics Media) with Honours</h2>
+
+    <p>Faculty of Informatics and Computing</p>
+    <p>Universiti Sultan Zainal Abidin (UniSZA)</p>
+
     <br>
+
+    <p><strong>Aspiring Network Security Analyst</strong></p>
+    <p>
+      Dedicated to developing knowledge in network security,
+      cybersecurity awareness, and emerging digital technologies.
+    </p>
+
+    <br>
+
     <a href="#career" class="btn">View Portfolio</a>
     <a href="#evidence" class="btn">View Evidence</a>
+  </div>
+</section>
+
+<section class="page">
+  <h2>Portfolio Overview</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Career Role</h3>
+      <p class="kpi">Network Security</p>
+      <p>Chosen field based on my interest in networking and cybersecurity.</p>
+    </div>
+
+    <div class="card">
+      <h3>Projects Included</h3>
+      <p class="kpi">6</p>
+      <p>Academic and technical projects used as evidence of learning.</p>
+    </div>
+
+    <div class="card">
+      <h3>Target Certifications</h3>
+      <p class="kpi">3</p>
+      <p>CCNA, Security+, and basic cloud/security training.</p>
+    </div>
   </div>
 </section>
 
@@ -200,12 +266,13 @@ footer{
     <p>
       A Network Security Analyst is responsible for protecting an organization’s computer
       network from cyber threats. This role involves monitoring network traffic, detecting
-      suspicious activities, managing security tools, and responding to security incidents.
+      suspicious activities, supporting security tools, and responding to security incidents.
     </p>
     <br>
     <p>
-      I choose this career because it matches my background in Internet Computing,
-      networking, cybersecurity assignments, and my interest in protecting digital systems.
+      I choose this career because it matches my background as an Information Technology
+      student and my learning experience in networking, cybersecurity, system design,
+      and digital technology projects.
     </p>
   </div>
 
@@ -215,30 +282,31 @@ footer{
     <div class="card">
       <h3>Job Responsibilities</h3>
       <ul>
-        <li>Monitor network activity</li>
-        <li>Detect cyber threats</li>
-        <li>Respond to incidents</li>
-        <li>Support firewall and security tools</li>
-        <li>Perform basic vulnerability analysis</li>
+        <li>Monitor network traffic and security events</li>
+        <li>Identify suspicious activities and threats</li>
+        <li>Support firewall and access control configuration</li>
+        <li>Assist in incident response activities</li>
+        <li>Prepare reports on network security issues</li>
       </ul>
     </div>
 
     <div class="card">
-      <h3>Required Skills</h3>
+      <h3>Required Technical Skills</h3>
       <ul>
         <li>Networking fundamentals</li>
+        <li>TCP/IP and subnetting</li>
         <li>Linux basics</li>
-        <li>Wireshark</li>
-        <li>Firewall knowledge</li>
-        <li>Cybersecurity awareness</li>
+        <li>Wireshark and packet analysis</li>
+        <li>Firewall and security monitoring tools</li>
       </ul>
     </div>
 
     <div class="card">
-      <h3>Cybersecurity Relevance</h3>
+      <h3>Relevance to Modern Cybersecurity</h3>
       <p>
         Network security is important because organizations depend on secure networks
-        to protect data, prevent cyberattacks, and maintain business continuity.
+        to protect customer data, prevent cyberattacks, and maintain business continuity.
+        As more services move online, the role of network security becomes increasingly important.
       </p>
     </div>
   </div>
@@ -262,13 +330,18 @@ footer{
       </div>
 
       <div class="skill">
-        <p>Python Basics - 55%</p>
-        <div class="bar"><div class="fill" style="width:55%"></div></div>
+        <p>Python Basics - 50%</p>
+        <div class="bar"><div class="fill" style="width:50%"></div></div>
       </div>
 
       <div class="skill">
-        <p>Linux Basics - 50%</p>
-        <div class="bar"><div class="fill" style="width:50%"></div></div>
+        <p>Linux Basics - 45%</p>
+        <div class="bar"><div class="fill" style="width:45%"></div></div>
+      </div>
+
+      <div class="skill">
+        <p>3D / AR Tools - 80%</p>
+        <div class="bar"><div class="fill" style="width:80%"></div></div>
       </div>
     </div>
 
@@ -291,8 +364,8 @@ footer{
       </div>
 
       <div class="skill">
-        <p>Creativity / 3D & AR - 80%</p>
-        <div class="bar"><div class="fill" style="width:80%"></div></div>
+        <p>Creativity - 85%</p>
+        <div class="bar"><div class="fill" style="width:85%"></div></div>
       </div>
     </div>
   </div>
@@ -300,12 +373,39 @@ footer{
   <br>
 
   <div class="card">
-    <h3>Skills Gap Analysis</h3>
-    <p>
-      Compared to industry requirements, I still need to improve my hands-on skills in
-      Linux, Wireshark, SIEM tools, and incident response. However, my academic projects
-      have helped me build a strong foundation in networking, problem solving, and system understanding.
-    </p>
+    <h3>Current Skills vs Industry Requirements</h3>
+    <table>
+      <tr>
+        <th>Industry Requirement</th>
+        <th>My Current Level</th>
+        <th>Improvement Plan</th>
+      </tr>
+      <tr>
+        <td>Networking and TCP/IP</td>
+        <td>Intermediate</td>
+        <td>Practice subnetting and complete CCNA preparation</td>
+      </tr>
+      <tr>
+        <td>Linux Administration</td>
+        <td>Beginner</td>
+        <td>Practice Linux commands and basic system administration</td>
+      </tr>
+      <tr>
+        <td>Security Monitoring</td>
+        <td>Beginner</td>
+        <td>Learn Wireshark, SIEM, and basic log analysis</td>
+      </tr>
+      <tr>
+        <td>Incident Response</td>
+        <td>Beginner</td>
+        <td>Study common attack scenarios and response steps</td>
+      </tr>
+      <tr>
+        <td>Communication and Reporting</td>
+        <td>Good</td>
+        <td>Improve professional writing and technical documentation</td>
+      </tr>
+    </table>
   </div>
 </section>
 
@@ -316,26 +416,41 @@ footer{
     <div class="timeline-box">
       <h3>Short-Term Goal: 2026 - 2027</h3>
       <p>
-        Complete internship in IT or networking field, improve Linux skills, learn Wireshark,
-        and strengthen networking knowledge.
+        Complete my internship in an IT, networking, or security-related environment.
+        I will improve my Linux skills, learn Wireshark, and strengthen my understanding
+        of computer networks.
       </p>
     </div>
 
     <div class="timeline-box">
       <h3>Medium-Term Goal: 2027 - 2028</h3>
       <p>
-        Take CCNA certification, build a small cybersecurity lab, and learn basic security
-        monitoring tools such as Splunk or SIEM.
+        Prepare for CCNA certification, build a small cybersecurity home lab using
+        VirtualBox or Packet Tracer, and learn basic security monitoring tools such as
+        Splunk or SIEM.
       </p>
     </div>
 
     <div class="timeline-box">
       <h3>Long-Term Goal: 2029 - 2031</h3>
       <p>
-        Work as a Network Security Analyst and continue improving professional skills
-        through Security+ or other cybersecurity certifications.
+        Work as a Network Security Analyst and continue improving my professional skills
+        through certifications such as Security+ and other cybersecurity training.
       </p>
     </div>
+  </div>
+
+  <br>
+
+  <div class="card">
+    <h3>Tools and Certifications to Learn</h3>
+    <ul>
+      <li>Wireshark for packet analysis</li>
+      <li>Linux for system and security administration</li>
+      <li>Cisco Packet Tracer for network simulation</li>
+      <li>Splunk or SIEM tools for security monitoring</li>
+      <li>CCNA and Security+ as career certification targets</li>
+    </ul>
   </div>
 </section>
 
@@ -351,17 +466,17 @@ footer{
         This project improved my understanding of subnetting, IP addressing,
         topology design, and network planning.
       </p>
-      <a href="#" class="btn">View Project</a>
+      <a href="images/smart-campus.png" target="_blank" class="btn">View Screenshot</a>
     </div>
 
     <div class="card project">
       <img src="images/paypal.png" alt="PayPal Security Analysis">
       <h3>PayPal Security Analysis</h3>
       <p>
-        This assignment helped me understand IAM, SIEM, Zero Trust, NGFW,
-        CSPM, and cloud security weaknesses.
+        This assignment helped me understand security technologies such as IAM,
+        SIEM, Zero Trust Architecture, NGFW, and CSPM.
       </p>
-      <a href="#" class="btn">View Report</a>
+      <a href="images/paypal.png" target="_blank" class="btn">View Screenshot</a>
     </div>
 
     <div class="card project">
@@ -369,9 +484,9 @@ footer{
       <h3>ChurnGuard AI Dashboard</h3>
       <p>
         This project shows my ability to use dashboard design, data analysis,
-        and problem-solving skills.
+        and problem-solving skills in an IT-related project.
       </p>
-      <a href="#" class="btn">View Dashboard</a>
+      <a href="images/churnguard.png" target="_blank" class="btn">View Screenshot</a>
     </div>
 
     <div class="card project">
@@ -381,7 +496,7 @@ footer{
         This project improved my understanding of web systems, login function,
         dashboard design, and user interface.
       </p>
-      <a href="#" class="btn">View Website</a>
+      <a href="images/studynest.png" target="_blank" class="btn">View Screenshot</a>
     </div>
 
     <div class="card project">
@@ -391,7 +506,7 @@ footer{
         This AR project improved my creativity, technical software skills,
         Unity knowledge, and digital learning system development.
       </p>
-      <a href="#" class="btn">View AR Project</a>
+      <a href="images/ar-project.png" target="_blank" class="btn">View Screenshot</a>
     </div>
 
     <div class="card project">
@@ -401,7 +516,7 @@ footer{
         This project developed my creativity, attention to detail, and ability
         to use 3D tools such as Maya or Blender.
       </p>
-      <a href="#" class="btn">View 3D Work</a>
+      <a href="images/3d-project.png" target="_blank" class="btn">View Screenshot</a>
     </div>
 
   </div>
@@ -422,17 +537,28 @@ footer{
     <h3>What Value Can I Bring?</h3>
     <p>
       I can bring value through my basic networking knowledge, willingness to learn,
-      teamwork skills, creativity, and interest in cybersecurity. My experience in academic
-      projects has helped me understand both technical and practical problem-solving.
+      teamwork skills, creativity, and interest in cybersecurity. My academic projects
+      have helped me understand technical concepts, problem solving, and the importance
+      of protecting digital systems.
     </p>
     <br>
 
     <h3>Why Should You Hire Me?</h3>
     <p>
-      I am responsible, adaptable, and motivated to improve myself. Although I still have
-      limited industry experience, I am willing to learn new tools and gain hands-on exposure
-      in network security.
+      I am a responsible and motivated student who is willing to learn and improve.
+      Although I still have limited industry experience, I am prepared to gain hands-on
+      exposure and develop the skills needed for network security work.
     </p>
+    <br>
+
+    <h3>Skills That Make Me Suitable</h3>
+    <ul>
+      <li>Basic networking and subnetting knowledge</li>
+      <li>Understanding of cybersecurity concepts</li>
+      <li>Teamwork and communication skills</li>
+      <li>Problem-solving mindset</li>
+      <li>Creative technical experience through AR and 3D projects</li>
+    </ul>
     <br>
 
     <h3>Strengths</h3>
@@ -440,7 +566,7 @@ footer{
       <li>Responsible and hardworking</li>
       <li>Good teamwork and communication</li>
       <li>Willing to learn new technologies</li>
-      <li>Creative through AR and 3D project experience</li>
+      <li>Creative and adaptable</li>
     </ul>
     <br>
 
@@ -450,6 +576,15 @@ footer{
       <li>Need to improve Linux and cybersecurity tools</li>
       <li>Need more hands-on practice in network security</li>
     </ul>
+    <br>
+
+    <h3>Final Reflection</h3>
+    <p>
+      Through this e-portfolio, I realized that my academic projects in networking,
+      cybersecurity, web systems, AR, and 3D technologies have helped me build useful
+      technical and soft skills. My goal is to continue improving step by step so that I
+      can position myself for a future career as a Network Security Analyst.
+    </p>
   </div>
 </section>
 
@@ -459,3 +594,4 @@ footer{
 
 </body>
 </html>
+```
