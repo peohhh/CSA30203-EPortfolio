@@ -1,34 +1,290 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My E-Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSA30203 E-Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0b0b0f;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #ff4fb8, #111);
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      color: #ffe6f5;
+    }
+
+    nav {
+      background: #111;
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      color: #ff7acb;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 40px 8%;
+    }
+
+    h2 {
+      color: #ff5fc0;
+      margin-bottom: 20px;
+      border-left: 5px solid #ff5fc0;
+      padding-left: 10px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #17171f;
+      padding: 25px;
+      border-radius: 15px;
+      border: 1px solid #ff4fb8;
+      box-shadow: 0 0 15px rgba(255, 79, 184, 0.25);
+    }
+
+    .card h3 {
+      color: #ff9bd8;
+      margin-bottom: 10px;
+    }
+
+    .kpi {
+      font-size: 32px;
+      font-weight: bold;
+      color: #ff4fb8;
+    }
+
+    .skill {
+      margin-bottom: 15px;
+    }
+
+    .bar {
+      background: #333;
+      border-radius: 20px;
+      overflow: hidden;
+      height: 18px;
+    }
+
+    .fill {
+      height: 100%;
+      background: linear-gradient(90deg, #ff4fb8, #ff9bd8);
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    .timeline {
+      border-left: 3px solid #ff4fb8;
+      padding-left: 20px;
+    }
+
+    .timeline div {
+      margin-bottom: 20px;
+      background: #17171f;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .evidence img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 12px;
+      border: 2px solid #ff4fb8;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: #ff9bd8;
+    }
+  </style>
 </head>
+
 <body>
 
+  <header>
     <h1>CSA30203 E-Portfolio</h1>
+    <p>Personal Career Development Portfolio in Network Security</p>
+    <p><strong>Sitti Rufaidah</strong> | Internet Computing, UniSZA</p>
+  </header>
 
+  <nav>
+    <a href="#about">About</a>
+    <a href="#career">Career</a>
+    <a href="#skills">Skills</a>
+    <a href="#plan">Plan</a>
+    <a href="#evidence">Evidence</a>
+    <a href="#reflection">Reflection</a>
+  </nav>
+
+  <section id="about">
     <h2>About Me</h2>
-    <p>Name: Sitti Rufaidah</p>
-    <p>Programme: Internet Computing, UniSZA</p>
+    <div class="cards">
+      <div class="card">
+        <h3>Career Goal</h3>
+        <p class="kpi">Network Security Analyst</p>
+      </div>
+      <div class="card">
+        <h3>Projects Completed</h3>
+        <p class="kpi">4</p>
+      </div>
+      <div class="card">
+        <h3>Target Certifications</h3>
+        <p class="kpi">3</p>
+      </div>
+    </div>
+  </section>
 
+  <section id="career">
     <h2>Career Exploration</h2>
-    <p>Chosen Career: Network Security Analyst</p>
+    <div class="card">
+      <h3>Chosen Role: Network Security Analyst</h3>
+      <p>
+        A Network Security Analyst is responsible for protecting an organization’s network
+        from cyber threats. This role involves monitoring network traffic, identifying suspicious
+        activities, managing security tools, and responding to security incidents.
+      </p>
+      <br>
+      <p>
+        This career is important because modern organizations depend on secure networks
+        to protect sensitive data, prevent cyberattacks, and maintain business continuity.
+      </p>
+    </div>
+  </section>
 
-    <h2>Skills Assessment</h2>
-    <ul>
-        <li>Networking Basics</li>
-        <li>Python Programming</li>
-        <li>Communication Skills</li>
-    </ul>
+  <section id="skills">
+    <h2>Personal Skills Assessment</h2>
 
+    <div class="card">
+      <h3>Technical Skills</h3>
+
+      <div class="skill">
+        <p>Networking Basics</p>
+        <div class="bar"><div class="fill" style="width:70%"></div></div>
+      </div>
+
+      <div class="skill">
+        <p>Python Programming</p>
+        <div class="bar"><div class="fill" style="width:60%"></div></div>
+      </div>
+
+      <div class="skill">
+        <p>Cybersecurity Knowledge</p>
+        <div class="bar"><div class="fill" style="width:55%"></div></div>
+      </div>
+
+      <div class="skill">
+        <p>Communication & Teamwork</p>
+        <div class="bar"><div class="fill" style="width:85%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="plan">
     <h2>Career Development Plan</h2>
-    <p>Target: CCNA and Security+ Certification</p>
+    <div class="timeline">
+      <div>
+        <h3>Short-Term Goal: 2026–2027</h3>
+        <p>Complete internship, improve Linux skills, learn Wireshark, and strengthen networking knowledge.</p>
+      </div>
+      <div>
+        <h3>Mid-Term Goal: 2027–2028</h3>
+        <p>Take CCNA certification and build a cybersecurity project portfolio.</p>
+      </div>
+      <div>
+        <h3>Long-Term Goal: 2029–2031</h3>
+        <p>Work as a Network Security Analyst and obtain Security+ certification.</p>
+      </div>
+    </div>
+  </section>
 
+  <section id="evidence" class="evidence">
     <h2>Evidence of Learning</h2>
-    <img src="images/churnguard.png" width="500">
 
-    <h2>Reflection</h2>
-    <p>My dream company is Telekom Malaysia.</p>
+    <div class="cards">
+      <div class="card">
+        <h3>ChurnGuard AI Dashboard</h3>
+        <p>Shows experience in dashboard development and data analysis.</p>
+      </div>
+
+      <div class="card">
+        <h3>Smart Campus Network Design</h3>
+        <p>Shows knowledge in subnetting, IP addressing, and network planning.</p>
+      </div>
+
+      <div class="card">
+        <h3>PayPal Security Analysis</h3>
+        <p>Shows understanding of IAM, SIEM, Zero Trust, NGFW, and CSPM.</p>
+      </div>
+
+      <div class="card">
+        <h3>StudyNest Website</h3>
+        <p>Shows web development and system design skills.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="reflection">
+    <h2>Personal Reflection</h2>
+    <div class="card">
+      <h3>Dream Company: Telekom Malaysia</h3>
+      <p>
+        I want to work at Telekom Malaysia because it is one of the main telecommunication
+        companies in Malaysia. Cybersecurity is important in this company because it manages
+        network infrastructure and customer data.
+      </p>
+      <br>
+      <p>
+        I can bring value through my basic networking knowledge, willingness to learn,
+        teamwork skills, and interest in cybersecurity. Although I still need to improve my
+        technical skills, I am motivated to grow and become a reliable security professional.
+      </p>
+      <br>
+      <p>
+        My strengths are being responsible, hardworking, and willing to learn. My weakness is
+        limited real industry experience, but I am improving through projects, assignments,
+        and self-learning.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Sitti Rufaidah | CSA30203 E-Portfolio</p>
+  </footer>
 
 </body>
 </html>
