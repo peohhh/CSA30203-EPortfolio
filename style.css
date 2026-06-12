@@ -24,45 +24,48 @@ h1{
     color:#ffb6c1;
 }
 
-.contact-card{
-    text-align:center;
-    padding:30px;
-    background:rgba(255,255,255,0.15);
-    border-radius:20px;
-    border:2px solid #ffb6c1;
-    box-shadow:0 0 15px rgba(255,182,193,0.5);
+h2{
+    color:#ffc0cb;
 }
 
-.contact-card:hover{
-    transform:translateY(-5px);
+.contact-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-top:20px;
+}
+
+.contact-box{
+    background:linear-gradient(135deg,#1a1a1a,#2b1020);
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    border:1px solid #ff69b4;
+    box-shadow:0 0 10px rgba(255,105,180,0.3);
     transition:0.3s;
 }
 
-.contact-card img{
-    width:120px;
-    height:120px;
-    border-radius:50%;
-    border:3px solid white;
-    object-fit:cover;
-    margin-bottom:15px;
+.contact-box:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 20px rgba(255,105,180,0.6);
 }
 
-.contact-card h3{
-    color:#ffd1dc;
+.contact-box h3{
+    color:#ffc0cb;
     margin-bottom:10px;
 }
 
-.contact-info p{
-    margin:10px 0;
-    font-size:16px;
+.contact-box p{
+    color:white;
+    font-size:15px;
 }
 
-.contact-info a{
+.contact-box a{
     color:#ffd1dc;
     text-decoration:none;
     font-weight:bold;
 }
 
-.contact-info a:hover{
+.contact-box a:hover{
     color:white;
 }
