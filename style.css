@@ -24,6 +24,45 @@ h1{
     color:#ffb6c1;
 }
 
-h2{
-    color:#ffc0cb;
+.contact-card{
+    text-align:center;
+    padding:30px;
+    background:rgba(255,255,255,0.15);
+    border-radius:20px;
+    border:2px solid #ffb6c1;
+    box-shadow:0 0 15px rgba(255,182,193,0.5);
+}
+
+.contact-card:hover{
+    transform:translateY(-5px);
+    transition:0.3s;
+}
+
+.contact-card img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    border:3px solid white;
+    object-fit:cover;
+    margin-bottom:15px;
+}
+
+.contact-card h3{
+    color:#ffd1dc;
+    margin-bottom:10px;
+}
+
+.contact-info p{
+    margin:10px 0;
+    font-size:16px;
+}
+
+.contact-info a{
+    color:#ffd1dc;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.contact-info a:hover{
+    color:white;
 }
